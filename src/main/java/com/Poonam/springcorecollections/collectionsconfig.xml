@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:p="http://www.springframework.org/schema/p"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+http://www.springframework.org/schema/beans/spring-beans.xsd
+http://www.springframework.org/schema/context
+http://www.springframework.org/schema/context/spring-context.xsd">
+
+	<bean name="Emp1" class="com.Poonam.springcorecollections.Emp">
+		<property name="empName" value="Radhe" />
+		<property name="contacts">
+			<list>
+				<value>1231231231</value>
+				<value>4564564564</value>
+				<value>7897897897</value>
+				<null />
+			</list>
+		</property>
+
+		<property name="address">
+			<set>
+				<value>Hyderabad</value>
+				<value>Bangalore</value>
+				<value>Vijayawada</value>
+				<value>Hubli</value>
+			</set>
+		</property>
+		<property name="courses">
+			<map>
+				<entry key="Java" value="2 months"></entry>
+				<entry key="JavaScript" value="2 months"></entry>
+				<entry key="Angular Js" value="4 months"></entry>
+				<entry key="Spring" value="3 months"></entry>
+			</map>
+		</property>
+		<property name="props">
+			<props>
+				<prop key="name">Poonam</prop>
+				<prop key="Package">com.Poonam.springcorecollections</prop>
+			</props>
+		</property>
+	</bean>
+
+</beans>
